@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sign up page</title>
+    <link rel="stylesheet" href="mycss1.css">
+    
+    </head>
+    <body>
+        <h2 class="h2heading">Create your Account</h2>
+
+        <form action="processlibrary.php" method="post" class="signUpForm">
+            <table style ="border:0px;">
+             <tr>
+               <td><label for="fname">First name:</label></td>
+               <td><input type="text" class ="roundedInput" id="fname" name="fname"></td>
+               </tr>
+            <tr>
+               <td><label for="lname">Last name:</label></td>
+               <td><input type="text" class ="roundedInput"  id="lname" name="lname"></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="text" class ="roundedInput"  id="email" name="email"></td>
+             </tr>
+
+             <tr>
+                <td><label for="phone">Phone:</label></td>
+                <td><input type="tel" class ="roundedInput"  id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required></td>
+             </tr>
+
+             <tr>
+                <td><label for="pass">Password:</label></td>
+                <td><input type="password" class ="roundedInput"  id="pass" name="pass"></td>
+             </tr>
+
+            
+          
+          
+            <tr>
+                <td><input type="submit" class="btnSignUp" value="Sign Up"></td> 
+            </tr>
+
+        
+    </table>
+        </form> 
+        
+    
+    </body>
+    </html>
