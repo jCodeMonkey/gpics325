@@ -78,6 +78,7 @@
    .loginForm{
     width: 300px;
     margin: 0 auto;
+    
 }
 
 .signUpForm{
@@ -106,3 +107,25 @@
     background: #57b846;
 
   }
+
+  .nav{
+    list-style-type: none;
+    margin:0;
+    right: 0;
+    width: 100%;
+    padding: 0;
+    color:black;
+    height:50px;
+    background-color: grey;
+    text-align: right;
+    position:sticky;
+    top:0px;
+    
+  }
+  
+.navop{
+	display:inline;
+	padding-right:25px;
+	font-size: 25px;
+	
+}
