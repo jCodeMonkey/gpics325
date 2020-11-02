@@ -19,25 +19,30 @@
             <table style ="border:0px;">
              <tr>
                <td><label for="fname">First name:</label></td>
-               <td><input type="text" class ="roundedInput" id="fname" name="fname"></td>
+               <td><input type="text" class ="roundedInput" id="fname" name="fname" autofocus required></td>
                </tr>
             <tr>
                <td><label for="lname">Last name:</label></td>
-               <td><input type="text" class ="roundedInput"  id="lname" name="lname"></td>
+               <td><input type="text" class ="roundedInput"  id="lname" name="lname" required></td>
             </tr>
             <tr>
                 <td><label for="email">Email:</label></td>
-                <td><input type="text" class ="roundedInput"  id="email" name="email"></td>
+                <td><input type="text" class ="roundedInput"  id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required title ="Invalid email address"></td>
              </tr>
 
              <tr>
                 <td><label for="phone">Phone:</label></td>
-                <td><input type="tel" class ="roundedInput"  id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required></td>
+                <td><input type="tel" class ="roundedInput"  id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required title = "Please enter in this format 123-456-7890"></td>
              </tr>
-
+<!--
+             <tr>
+                <td><label for="phone">User Name:</label></td>
+                <td><input type="text" class ="roundedInput"  id="username" name="username"  pattern="{3,}" required title="Please enter at least 3 characters"></td>
+             </tr>
+-->
              <tr>
                 <td><label for="pass">Password:</label></td>
-                <td><input type="password" class ="roundedInput"  id="pass" name="pass"></td>
+                <td><input type="password" class ="roundedInput"  id="pass" name="pass"  pattern=".{6,}" required title="Please enter at least 6 characters"></td>
              </tr>
 
             
